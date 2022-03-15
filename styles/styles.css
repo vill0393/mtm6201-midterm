@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************************
+                    Mobile First   
+******************************************************/
+/* Default settings like font-family, color, font size*/
+
+html{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color:#6C6C6C;
+	background-color: #e5ebee;
+}
+
+a{
+    text-decoration:none;
+}
+
+h1{
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 4rem;
+	color:white;
+	padding-left: 50px;
+}
+
+h2{
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 2rem;
+	padding-left:15px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	color: #9686AD;
+}
+
+h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+	padding-left:20px;
+	color: #546681;
+}
+
+p{
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 1em;
+	line-height: 1.6rem;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+a{
+    text-decoration:none;
+}
+
+/******************************************************
+                    Nav   
+******************************************************/
+nav{
+	width: 100%;
+	margin:auto;
+	text-align:center;
+    position:relative;
+	background-color: white;
+}
+
+nav ul{
+	display:flex;
+	flex-grow:1;
+	width:100%;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	background-color:#c0b6ce;
+	padding:10px 0 10px 0;
+}
+
+nav li a{
+	font-size:1.2rem;
+	font-weight:700;
+	color:white;
+}
+
+nav li a:hover{
+	color: #C4D760;
+}
+
+.logo{
+	padding:10px 0 10px 0;
+}
+
+.logo:active{
+	opacity: 0.3;
+	transition-duration: 0.3s;
+}
+
+/******************************************************
+                    Header   
+******************************************************/
+header{
+	position:relative;
+	padding:10px 0 470px 0;
+	background-image:url("../images/yoga-02.jpg");
+}
+
+#intro{
+	font-size: 1.2rem;
+	padding: 10px 40px 0 50px;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: white;
+}
+
+/******************************************************
+                    ABOUT  
+******************************************************/
+
+.about{
+	background-color: #f2f0f5;
+}
+
+/******************************************************
+                    CONTACT FORM  
+******************************************************/
+.contact-flexbox{
+	background-color:#f6f9e8;
+}
+
+#message-box{
+	display:block;
+	margin-left:20px;
+	margin-top:10px;
+	height:200px;
+    width:92%;
+}
+
+#firstname, #lastname, #message, #firstname-i, #lastname-i, #message-i{
+	display: block;
+	width:92%;
+	margin-top:20px;
+	margin-left:20px;
+	color:#546681;
+	font-weight:700;
+}
+
+#submit{
+	margin:10px 0 0 20px;
+    padding:5px 5px 5px 5px;
+	margin-bottom:100px;
+	font-weight:700;
+    color:white;
+    background-color:#9686AD;
+}
+
+/******************************************************
+                    Footer  
+******************************************************/
+
+footer{
+	color:white;
+    font-size:1rem;
+	font-weight:700;
+	text-align: center;
+    position:relative;
+    padding:10px;
+	background-color: #8eb0bf;
+}
+
+.icon-mail{
+	color:white;
+	font-size: 20px;
+	padding-right:10px;
+	
+}
+
+/* Translate is used to move the element, in this case vertically while hovering*/
+
+.icon-mail:hover{
+	transform: translate(0, -5px);
+	transition-duration: 0.25s;
+}
+
+/******************************************************
+                    MEDIA QUERIES   
+******************************************************/
+@media screen and (min-width: 650px){
+	body{
+        font-size:16px;
+  }
+
+/* We center our website with margin*/
+  .container{
+	width:85%;
+	margin:0 auto;
+	max-width:1200px;
+}
+
+/******************************************************
+                    HEADER  
+******************************************************/
+.logo{
+	margin-left: 10px;
+}
+
+header{
+	background-image:url("../images/yoga-01.jpg");
+	height: 150px;
+	padding: 40px 520px 570px 210px;
+}
+
+#intro{
+		font-size: 1.3rem;
+		padding: 30px 40px 0 0;
+		font-weight: 500;
+		line-height: 1.8rem;
+		color: #9686AD;
+}
+
+/* Changes to the head font sizes */
+h1{
+	font-size: 4rem;
+	color:#C4D760;
+	padding:10px 0 0 0 ;
+}
+
+h2{
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+/* h3 remains the same */
+
+p{
+	padding-right:100px;
+}
+
+/******************************************************
+                    NAV BAR  
+******************************************************/
+
+nav{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:8px 0 8px 0;
+	background-color: white;
+}
+
+nav ul{
+	display:flex;
+	flex-grow:1;
+	max-width:400px;
+	background-color: white;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+}
+
+nav li a{
+	font-size:1.3rem;
+	font-weight:700;
+	color:#8eb0bf;
+}
+
+/******************************************************
+                   ABOUT-GRID  
+******************************************************/
+.about-grid{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1;
+	gap:4em;
+	background-color: #f2f0f5;
+}
+
+.about{
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+
+.teacher{
+	width:100%;
+	margin-left:40px;
+	margin-top:60px;
+	padding-bottom: 100px;
+}
+
+/******************************************************
+            FLEX-BOX (Applied to Contact info and Form) 
+******************************************************/
+.contact-flexbox{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.contact{
+	order:1;
+	width:50%;
+}
+
+.questions{
+	order:2;
+	width: 50%;
+}
+
+/********* CONTACT FORM *********/
+
+.contact-flexbox{
+	background-color:#f6f9e8;
+	padding-left:100px;
+}
+input{
+	display:inline;
+	width:30%;
+	padding-top:5px;
+	padding-bottom:5px;
+	
+}
+.contactus{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#message-box{
+	display:block;
+	margin-top:10px;
+	height:200px;
+    width:92%;
+}
+
+#submit{
+	margin:10px 0 0 20px;
+    padding:10px 10px 10px 10px;
+	margin-bottom:100px;
+	font-weight:700;
+    color:white;
+    background-color:#9686AD;
+}
+
+#firstname, #lastname, #message, #firstname-i, #lastname-i, #message-i{
+	color:#546681;
+	font-weight:700;
+}
+
+
+}

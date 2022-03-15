@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is the main CSS file -->
+        <link href="styles/styles.css" rel="stylesheet">
+    <!-- This is to link the Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- the following css file is for the icon font (using Fico)-->
+        <link href="styles/icons.css" rel="stylesheet">
+
+    <title>Mid-Term Assignment</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav id="home">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Pathway_logo.jpg" alt="Pathway Yoga Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <article class="contact-flexbox">
+            <div class="contact">
+            <h2>Contact</h2>
+            <h3>Studio Adress</h3>
+                <p>
+                    346 Richmond Rd, Suite 203
+                    Ottawa, ON K2A 0E8.
+                </p>
+            <h3>Reach us at</h3>
+                <p>
+                    welcome@pathwayyoga.ca
+                </p>
+            </div>
+            <div class="questions">
+            <h2>Do you have any questions?</h2>
+                <h3>We would love to hear from you!</h3>
+                <form class="contactus" action="message.php" method="post">
+                    <label id=firstname for="firstname">First Name</label>
+                    <input type="text" id="firstname-i" name="firstname">
+                    <label id="lastname" for="lastname">Last Name</label>
+                    <input type="text" id="lastname-i" name="lastname">
+                    <label id="message" for="message">Message</label>
+                    <textarea id="message-box" name="message-i"></textarea>
+                    <button type="submit" id="submit" name="submit">Send</button>
+                 </form>
+            </div>
+        </article>
+
+<footer>
+    <a href="mailto:welcome@pathwayyoga.ca"><i class="icon icon-mail"></i></a>welcome@pathwayyoga.ca
+</footer>
+
+    </div>
+</body>
+</html>
